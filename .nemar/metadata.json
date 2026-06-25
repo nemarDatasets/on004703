@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on004703",
-  "source": "openneuro",
-  "source_id": "ds004703",
+  "pipeline_stage": "validated",
   "title": "sEEG Passive listening to natural speech",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Anna Mai": {},
     "Stephanie Ries": {},
@@ -11,23 +11,67 @@
     "Jerry Shih": {},
     "Timothy Gentner": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004703.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004703",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004703",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.6.0",
-  "recording_modality": [
+  "modalities": [
     "anat",
     "ieeg"
   ],
-  "datatypes": [
-    "anat",
-    "ieeg"
-  ]
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".csv",
+    ".docx",
+    ".edf",
+    ".ipynb",
+    ".json",
+    ".md",
+    ".nii",
+    ".py",
+    ".pyc",
+    ".tsv",
+    ".wav"
+  ],
+  "description": "This stereoelectroencephalography (sEEG) dataset comprises intracranial recordings from neurosurgical patients passively listening to natural conversational speech. Participants heard 30-45 second passages of speech and answered comprehension questions, with data collected across 6 blocks of 7 passages each. The dataset includes depth electrode recordings from Ad-Tech Spencer Probes and, for two patients, grid and strip electrode arrays, providing high-resolution neural activity during speech perception.",
+  "methods_description": "Intracranial recordings were collected from June 2018 to August 2019 using depth electrodes (Ad-Tech Spencer Probes with 10 leads spaced 3-7mm apart) and, for patients SD012 and SD022, grid and strip electrodes. Scalp reference and ground electrodes were 13mm, 2.5M single lead subdermal electrodes (Rochester Electro-Medical, serial S81025-A-24RM). Participants passively listened to 30-45 second passages of conversational speech followed by 2-alternative forced choice comprehension questions across 6 blocks.",
+  "keywords": [
+    {
+      "term": "sEEG"
+    },
+    {
+      "term": "stereoelectroencephalography"
+    },
+    {
+      "term": "intracranial recording"
+    },
+    {
+      "term": "Speech Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013067"
+    },
+    {
+      "term": "natural speech"
+    },
+    {
+      "term": "depth electrodes"
+    }
+  ],
+  "source_hash": "dc117b66e68138a44d8e649fdf79ab850c85166e52bc33dcbf69cbfa9f4002ef"
 }
