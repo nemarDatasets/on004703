@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004703-blue)](https://doi.org/10.82901/nemar.on004703)
+
 CONTACT
 
 For questions about this data set, please contact Anna Mai (anna.mai@mpi.nl; ORCiD 0000-0002-8343-9216). 
