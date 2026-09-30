@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "sEEG Passive listening to natural speech",
-  "description": "This stereoelectroencephalography (sEEG) dataset comprises intracranial recordings from neurosurgical patients passively listening to natural conversational speech. Participants heard 30-45 second passages of speech and answered comprehension questions, with data collected across 6 blocks of 7 passages each. The dataset includes depth electrodes and, for two patients, grid and strip electrodes, providing high-resolution neural activity during speech perception. USAGE RESTRICTIONS: These data may not be used for commercial purposes, including but not limited to use in any kind of training set for commercial machine learning applications. These data may not be used in any way that either in part or in whole disambiguates participant identity, including but not limited to attempts at 3D facial reconstruction.",
-  "methods_description": "Intracranial recordings were collected from June 2018 to August 2019 using depth electrodes (Spencer Probe, Ad-Tech) with 10 leads spaced 3-7mm apart, supplemented by grid and strip electrodes for two patients (SD012 and SD022). Scalp reference and ground electrodes were 13mm subdermal electrodes (Rochester Electro-Medical). Participants passively listened to conversational speech passages (30-45s) followed by 2-alternative forced choice comprehension questions across 6 blocks with 7 passages per block. Note: Anatomical scans are not available for participant SD012 due to excessive movement artifacts.",
+  "description": "Stereo-EEG (sEEG) recordings from epilepsy patients with implanted depth electrodes, and in two cases additional grid and strip electrodes, during passive listening to natural conversational speech. Participants heard 30-45 s passages and answered a two-alternative content question after each. Data were collected between June 2018 and August 2019.",
+  "methods_description": "Recordings used Ad-Tech Spencer Probe depth electrodes with 10 contacts each, spaced 3-7 mm apart. A scalp subdermal electrode served as reference and ground. The task comprised 6 blocks of 7 speech passages each, with a verbal 2AC content question after every passage. Channels with names beginning with 'C' were unused and should be dropped.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -15,36 +15,24 @@
   },
   "keywords": [
     {
-      "term": "sEEG"
+      "term": "stereo-EEG"
     },
     {
-      "term": "stereoelectroencephalography"
+      "term": "intracranial EEG"
     },
     {
-      "term": "intracranial recording"
-    },
-    {
-      "term": "Speech Perception",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D013067"
+      "term": "speech perception"
     },
     {
       "term": "natural speech"
     },
     {
-      "term": "depth electrodes"
+      "term": "passive listening"
     },
     {
-      "term": "speech comprehension"
-    },
-    {
-      "term": "clinical population"
-    },
-    {
-      "term": "neurosurgical patients"
-    },
-    {
-      "term": "passive listening task"
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     }
   ],
   "related_identifiers": [
@@ -54,14 +42,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004703",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds004703.v1.1.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004703",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "Structural MRI Dataset",
@@ -70,7 +58,7 @@
     "ieeg"
   ],
   "sizes": [
-    "13.9 GB (175 files)"
+    "12.98 GB (175 files)"
   ],
   "formats": [
     ".csv",
